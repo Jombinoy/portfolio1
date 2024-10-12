@@ -12,6 +12,16 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
         <title>Portfolio | JOM</title>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "oVgaPMsaswdS6wydK",
+      });
+   })();
+</script>    
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -267,18 +277,44 @@
 </section>
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="email" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
+    <div class="contact__container bd-grid">
+        <form id="contact-form" class="contact__form">
+            <input type="text" id="name" placeholder="Name" class="contact__input" required>
+            <input type="email" id="email" placeholder="Email" class="contact__input" required>
+            <textarea id="message" placeholder="Your message" cols="0" rows="10" class="contact__input" required></textarea>
+            <input type="button" value="Send" class="contact__button button" onclick="sendMail()">
+        </form>
+    </div>
+</section>
+
+<!-- JavaScript Code to Handle Form Submission -->
+<script>
+    function sendMail() {
+        var params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+        };
+      
+        const serviceID = "service_zmwre8c";  // Replace with your EmailJS service ID
+        const templateID = "template_pkrmy5t";  // Replace with your EmailJS template ID
+      
+        emailjs.send(serviceID, templateID, params)
+            .then(res => {
+                // Redirect to the success page on successful email send
+                window.location.href = "success.html"; // Adjust path as necessary
+            })
+            .catch(err => {
+                console.error(err);
+                alert("Failed to send message. Please try again.");
+            });
+    }
+</script>  
+
+
         </main>
 
         <!--===== FOOTER =====-->

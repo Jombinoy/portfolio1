@@ -1,0 +1,139 @@
+<!-- success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* Reset some default browser styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            background: linear-gradient(135deg, #a0c4ff, #f0f4f8); /* Gradient background */
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Dark text */
+            animation: fadeIn 1s ease-in-out; /* Fade-in effect for the body */
+            overflow: hidden; /* Prevent scrollbars from appearing */
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Success message container */
+        .success-message {
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px; /* Rounded corners */
+            background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+            backdrop-filter: blur(10px); /* Blur effect */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+            max-width: 500px; /* Limit width */
+            width: 100%; /* Full width for mobile */
+            transform: translateY(-20px); /* Initial position for animation */
+            animation: slideIn 0.5s ease forwards; /* Slide-in effect */
+        }
+
+        /* Animation for slide-in effect */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 2.5rem; /* Larger font size for the heading */
+            margin-bottom: 10px; /* Space below heading */
+            color: #28a745; /* Success color */
+        }
+
+        /* Icon styles */
+        .success-icon {
+            font-size: 5rem; /* Large icon size */
+            color: #28a745; /* Match icon color with heading */
+            margin-bottom: 20px; /* Space below icon */
+            animation: flyInTick 2s ease forwards; /* Tick icon flying animation */
+        }
+
+        /* Keyframes for tick flying animation */
+        @keyframes flyInTick {
+            0% {
+                transform: translateY(-200%) scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(50%) scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Paragraph styles */
+        p {
+            font-size: 1.2rem; /* Font size for paragraphs */
+            margin: 5px 0 20px; /* Space around paragraphs */
+            line-height: 1.5; /* Line height for readability */
+        }
+
+        /* Link styles */
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px; /* Space above the button */
+            text-decoration: none; /* Remove underline */
+            background-color: #007bff; /* Primary color */
+            color: #fff; /* White text */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for the button */
+        }
+
+        a:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            transform: translateY(-2px); /* Slight lift effect on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+        }
+
+        a:active {
+            transform: translateY(1px); /* Slight dip effect on click */
+        }
+    </style>
+</head>
+<body>
+    <div class="success-message">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i> <!-- Tick icon -->
+        </div>
+        <h1>Thank You!</h1>
+        <p>Your message has been sent successfully.</p>
+        <p>We will get back to you shortly.</p>
+        <a href="index.html">Go back to Home</a> <!-- Adjust to your home page -->
+    </div>
+</body>
+</html>
