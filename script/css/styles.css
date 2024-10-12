@@ -682,3 +682,38 @@ canvas.particles-js-canvas-el{
 .fade-in {
   opacity: 1; /* Fully visible */
 }
+
+
+.button.hire-me {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button.hire-me:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.contact-text {
+  font-size: 1rem;
+}
+
+

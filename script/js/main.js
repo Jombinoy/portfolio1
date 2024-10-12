@@ -43,6 +43,8 @@ sr.reveal('.home__social-icon', { interval: 200 });
 sr.reveal('.about__img', {}); 
 sr.reveal('.about__subtitle', { delay: 400 }); 
 sr.reveal('.about__text', { delay: 400 }); 
+sr.reveal('.contact-details', { delay: 600 });  // Animation for contact details
+sr.reveal('.hire-me', { delay: 800 });  // Animation for the "Hire Me" button
 
 /* SCROLL SKILLS */
 sr.reveal('.skills__subtitle', {}); 
@@ -85,3 +87,11 @@ setInterval(changeTitle, 2000);
 
 // Initial fade-in for the first title
 changeTitle();
+
+
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+    toggle.setAttribute('aria-expanded', !expanded);
+});
