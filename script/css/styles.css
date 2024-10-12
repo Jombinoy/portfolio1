@@ -357,25 +357,25 @@ canvas.particles-js-canvas-el{
 
 /* Unique hover effects for each project card */
 .projects__data:nth-child(1):hover {
-  background-color: #fb05ca; /* Light blue for the first card */
+  background-color: #f384dd; /* Light blue for the first card */
   transform: translateY(-5px); /* Slight lift on hover */
   box-shadow: 0 8px 30px rgba(14, 36, 49, 0.15); /* Increased shadow on hover */
 }
 
 .projects__data:nth-child(2):hover {
-  background-color: #ff0000; /* Light red for the second card */
+  background-color: #f17e7e; /* Light red for the second card */
   transform: translateY(-5px); /* Slight lift on hover */
   box-shadow: 0 8px 30px rgba(14, 36, 49, 0.15); /* Increased shadow on hover */
 }
 
 .projects__data:nth-child(3):hover {
-  background-color: #05f705; /* Light green for the third card */
+  background-color: #79f779; /* Light green for the third card */
   transform: translateY(-5px); /* Slight lift on hover */
   box-shadow: 0 8px 30px rgba(14, 36, 49, 0.15); /* Increased shadow on hover */
 }
 
 .projects__data:nth-child(4):hover {
-  background-color: #fd8e06; /* Light orange for the fourth card */
+  background-color: #f4b76d; /* Light orange for the fourth card */
   transform: translateY(-5px); /* Slight lift on hover */
   box-shadow: 0 8px 30px rgba(14, 36, 49, 0.15); /* Increased shadow on hover */
 }
