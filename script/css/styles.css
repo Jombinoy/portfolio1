@@ -1150,3 +1150,29 @@ body {
       justify-content: center; /* Ensure the icons are centered on desktop view */
   }
 }
+
+
+.skills__iframe {
+  width: 100%;             /* Use 100% width for responsiveness */
+  max-width: 1500px;      /* Optional: set a max width for larger screens */
+  height: 485px;          /* Set a height that fits your design */
+  border: none;           /* Remove the default border */
+  border-radius: 10px;    /* Adds rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  overflow: hidden;        /* Prevent content overflow */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .skills__iframe {
+      height: 300px;      /* Adjust height for mobile */
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+  .skills__iframe {
+      height: 250px;      /* Further adjust height for very small screens */
+  }
+}
+

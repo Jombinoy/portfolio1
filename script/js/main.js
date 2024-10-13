@@ -50,7 +50,7 @@ sr.reveal('.hire-me', { delay: 800 });  // Animation for the "Hire Me" button
 sr.reveal('.skills__subtitle', {}); 
 sr.reveal('.skills__text', {}); 
 sr.reveal('.skills__data', { interval: 200 }); 
-sr.reveal('.skills__img', { delay: 600 });
+sr.reveal('.skills__iframe', { delay: 600 });
 
 /* SCROLL PROJECTS */
 sr.reveal('.projects__data', { interval: 200 }); 
