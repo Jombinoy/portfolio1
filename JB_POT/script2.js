@@ -3,30 +3,7 @@ const icons = [
     'html5', 'css3', 'nodedotjs', 'express', 'nextdotjs', 'prisma',
     'postgresql', 'firebase', 'nginx', 'vercel', 'testinglibrary', 'jest',
     'cypress', 'docker', 'git', 'jira', 'github', 'gitlab',
-    'androidstudio', 'sonarqube', 'figma',
-    
-    // New Icons
-    'ruby',               // Ruby
-    'rubygems',          // RubyGems           
-    'kotlin',            // Kotlin
-    'swift',             // Swift           
-    'angular',           // Angular
-    'laravel',           // Laravel
-    'mongodb',           // MongoDB
-    'sqlite',            // SQLite
-    'redis',             // Redis
-    'graphql',           // GraphQL
-    'apache',            // Apache
-    'linux',             // Linux            
-    'terraform',         // Terraform
-    'kubernetes',        // Kubernetes
-    'jupyter',           // Jupyter Notebook
-    'notion',            // Notion
-    'figma',             // Figma (already included)
-    'sketch',            // Sketch
-    'woocommerce',       // WooCommerce
-    'shopify',           // Shopify
-    'wordpress'          // WordPress
+    'androidstudio', 'sonarqube', 'figma',         // WordPress
 ];
 
 let scene, camera, renderer, globe;
