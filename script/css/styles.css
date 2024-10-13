@@ -567,104 +567,190 @@ canvas.particles-js-canvas-el{
 .footer__back-to-top:hover {
   background-color: #4070F4;
 }
+/* ===== MEDIA QUERIES ===== */
 
-/* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 768px){
-  body{
+/* Base styles for mobile-first design */
+
+/* For small devices (phones) */
+@media screen and (max-width: 576px) {
+ 
+  
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+  .section-title::after {
+    width: 50px;
+    top: 2rem;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .nav__item {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .home {
+    height: auto; /* Allow content to control height */
+    padding: 2rem 1rem;
+  }
+
+  .home__img {
+    width: 250px; /* Smaller image for mobile */
+    margin-bottom: -10px;
+    bottom: 10%;
+  }
+
+
+  
+  .about__container, .skills__container {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+    text-align: center;
+  }
+
+  .work__container {
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto;
+  }
+
+  .contact__form {
+    width: 100%; /* Full width for form on mobile */
+  }
+
+  .contact__container {
+    justify-items: center;
+  }
+}
+
+/* For tablets and small desktops */
+@media screen and (min-width: 768px) {
+  body {
     margin: 0;
   }
-  .section{
+  
+  .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
-  .section-title{
+
+  .section-title {
     margin-bottom: var(--mb-6);
   }
-  .section-title::after{
+  
+  .section-title::after {
     width: 80px;
     top: 3rem;
   }
 
-  .nav{
+  .nav {
     height: calc(var(--header-height) + 1rem);
   }
-  .nav__list{
+
+  .nav__list {
     display: flex;
     padding-top: 0;
   }
-  .nav__item{
+
+  .nav__item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   }
-  .nav__toggle{
+
+  .nav__toggle {
     display: none;
   }
-  .nav__link{
+
+  .nav__link {
     color: var(--second-color);
   }
 
-  .home{
+  .home {
     height: 100vh;
   }
-  .home__data{
+
+  .home__data {
     align-self: flex-end;
   }
-  .home__social{
+
+  .home__social {
     padding-top: 0;
     padding-bottom: 3.5rem;
     flex-direction: row;
     align-self: flex-end;
   }
-  .home__social-icon{
-    margin-bottom: 0;
+
+  .home__social-icon {
     margin-right: var(--mb-4);
-    width: max-content;               /* Ensure the icon wraps correctly */
-    margin-bottom: var(--mb-2);      /* Maintain spacing */
-    font-size: 3.5rem;                /* Increase the size of the icons */
-    color: var(--second-color);       /* Default icon color */
-    transition: transform 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    width: max-content;
+    font-size: 3.5rem;
+    color: var(--second-color);
+    transition: transform 0.3s, color 0.3s;
   }
+
   .home__social-icon:hover {
-    color: var(--first-color);        /* Change color on hover */
-    transform: scale(1.1);            /* Slightly increase the size on hover */
-}
-.home__img {
-  width: 457px;
-  bottom: 30%; /* Existing position */
-  margin-bottom: -20px; /* Adjust this value as needed */
-}
+    color: var(--first-color);
+    transform: scale(1.1);
+  }
 
+  .home__img {
+    width: 457px;
+    bottom: 30%;
+    margin-bottom: -20px;
+  }
 
-  .about__container, .skills__container{
-    grid-template-columns: repeat(2,1fr);
+  .about__container, .skills__container {
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
   }
-  .about__img img{
+
+  .about__img img {
     width: 300px;
   }
-  .work__container{
+
+  .work__container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
   }
-  .contact__form{
+
+  .contact__form {
     width: 360px;
   }
-  .contact__container{
+
+  .contact__container {
     justify-items: center;
   }
 }
 
-@media screen and (min-width: 1024px){
-  .bd-grid{
+/* For desktops and larger screens */
+@media screen and (min-width: 1024px) {
+  .bd-grid {
     margin-left: auto;
     margin-right: auto;
   }
-  .home__img{
+
+  .home__img {
     right: 10%;
   }
+
+  .work__container {
+    grid-template-columns: repeat(4, 1fr); /* Four columns for wider screens */
+  }
+
+  .about__img img {
+    width: 350px; /* Larger images for desktop */
+  }
+
+  .contact__form {
+    width: 400px; /* Wider form on desktop */
+  }
 }
+
 
 
 
@@ -715,5 +801,35 @@ canvas.particles-js-canvas-el{
 .contact-text {
   font-size: 1rem;
 }
+
+
+
+
+.button.download-cv {
+  display: inline-block;
+  padding: 1rem 1rem; /* Increased padding for a larger button */
+  background-color: var(--first-color); /* You can replace with your preferred color */
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  bottom: 30%;
+  margin-top: -50px; /* Keep this to move the button up */
+}
+
+.download-cv:hover {
+  background-color: var(--second-color); /* Change on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.download-cv:active {
+  transform: scale(0.98); /* Slightly shrink when clicked */
+}
+
+
 
 

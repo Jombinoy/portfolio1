@@ -35,7 +35,7 @@ const sr = ScrollReveal({
 
 /* SCROLL HOME */
 sr.reveal('.home__title', {}); 
-sr.reveal('.button', { delay: 200 }); 
+sr.reveal('.download-cv', { delay: 200 }); 
 sr.reveal('.home__img', { delay: 400 }); 
 sr.reveal('.home__social-icon', { interval: 200 }); 
 
@@ -63,6 +63,7 @@ sr.reveal('.experience__data', { interval: 200 }); /* Add animation for each exp
 
 /* SCROLL CONTACT */
 sr.reveal('.contact__input', { interval: 200 });
+sr.reveal('.contact__button', { interval: 200 });
 
 const titles = ["Software Engineer", "Web Developer", "Data Scientist", "UI/UX Designer", "Machine Learning Engineer"];
 const jobTitleElement = document.getElementById("job-title");
