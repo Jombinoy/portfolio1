@@ -65,7 +65,7 @@ sr.reveal('.experience__data', { interval: 200 }); /* Add animation for each exp
 sr.reveal('.contact__input', { interval: 200 });
 sr.reveal('.contact__button', { interval: 200 });
 
-const titles = ["Software Engineer", "Web Developer", "Data Scientist", "UI/UX Designer", "Machine Learning Engineer"];
+const titles = ["Software Engineer", "Web Developer", "Data Engineer", "Prompt Engineer", "Database Engineer"];
 const jobTitleElement = document.getElementById("job-title");
 let index = 0;
 
