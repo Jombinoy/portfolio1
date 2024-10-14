@@ -1307,7 +1307,7 @@ body {
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #00b3b3 0%, #004d66 100%);
+  background: linear-gradient(90deg, #4070F4 0%, #004d66 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 10px 0;
