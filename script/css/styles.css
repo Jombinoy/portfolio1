@@ -533,6 +533,12 @@ canvas.particles-js-canvas-el{
   margin: 0.25rem 0; /* Margin for institution and CGPA */
 }
 
+.education__image {
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: to round corners */
+  margin-bottom: 10px; /* Space between image and text */
+}
 
 /* ===== CONTACT =====*/
 .contact__input{
