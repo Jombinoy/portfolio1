@@ -520,7 +520,7 @@ canvas.particles-js-canvas-el{
 .education__title {
   margin: 0; /* Remove default margin */
   font-size: 1.25rem; /* Font size for education titles */
-  color: #fff; /* Default text color for better visibility on colored backgrounds */
+  color: #000000; /* Default text color for better visibility on colored backgrounds */
 }
 
 .education__year {
@@ -534,10 +534,10 @@ canvas.particles-js-canvas-el{
 }
 
 .education__image {
-  width: 100%; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5px; /* Optional: to round corners */
-  margin-bottom: 10px; /* Space between image and text */
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: to round corners */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
 /* ===== CONTACT =====*/
