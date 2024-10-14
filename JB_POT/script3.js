@@ -2,7 +2,7 @@ const reviews = [
     {
         name: "Titus William Sunil",
         username: "@titus",
-        body: "Jom's problem-solving skills and positive attitude make him a joy to work with.",
+        body: "Jom communicates complex ideas clearly and effectively, making it easy for everyone on the team to stay aligned.",
         img: "/img/titus.jpeg",
         timestamp: "2024-10-14",
         rating: 5
@@ -10,7 +10,7 @@ const reviews = [
     {
         name: "Kishor Vinod",
         username: "@kishor",
-        body: "Jom is super knowledgeable and always ready to help. A true team player!",
+        body: "Jom has a unique way of thinking outside the box, which has led to innovative solutions for our projects.",
         img: "/img/kishor_image.png",
         timestamp: "2024-10-13",
         rating: 4.6
@@ -18,7 +18,7 @@ const reviews = [
     {
         name: "Martin Siby",
         username: "@martin",
-        body: "Jom is as adventurous as he is skilled. Always pushing boundaries!",
+        body: "Whenever we faced a tough issue, Jom was the go-to person. His analytical mindset is a huge advantage.",
         img: "/img/martin.jpeg",
         timestamp: "2024-10-11",
         rating: 4.2
@@ -26,7 +26,7 @@ const reviews = [
     {
         name: "Srejus Jayakumar",
         username: "@srejus",
-        body: "Jom balances work and personal life so well. Always insightful!",
+        body: "Jom is incredibly dedicated to his work. He often goes above and beyond to ensure the project is a success.",
         img: "/img/srejus.jpeg",
         timestamp: "2024-10-10",
         rating: 5
@@ -34,7 +34,7 @@ const reviews = [
     {
         name: "Christin Benny",
         username: "@christin",
-        body: "Jom handles pressure with ease and always looks out for others.",
+        body: "His positive attitude is infectious! Jom brings a great energy to the team and helps keep morale high.",
         img: "/img/christin.jpeg",
         timestamp: "2024-10-09",
         rating: 4.3
@@ -42,7 +42,7 @@ const reviews = [
     {
         name: "Jefin James",
         username: "@jefin",
-        body: "Jom's creativity and attention to detail are truly impressive.",
+        body: "I've seen Jom adapt quickly to new challenges. His eagerness to learn makes him an invaluable asset to any team.",
         img: "/img/jefin.jpeg",
         timestamp: "2024-10-08",
         rating: 5

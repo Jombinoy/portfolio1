@@ -419,7 +419,6 @@ canvas.particles-js-canvas-el{
   transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
-
 /* EXPERIENCE SECTION */
 .experience {
   padding: 4rem 0; /* Top and bottom padding */
@@ -451,18 +450,32 @@ canvas.particles-js-canvas-el{
 }
 
 .experience__data {
-  background-color: #f9f9f9; /* Background color for each experience item */
   padding: 2rem; /* Padding inside each item */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s; /* Animation for hover effect */
+  transition: transform 0.3s, background-color 0.3s; /* Animation for hover effect */
   width: 100%; /* Full width */
 }
 
-.experience__data:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
+/* Different background colors for each experience item */
+.experience--color1 {
+  background-color: #f9f9f9; /* Light grey */
 }
 
+.experience--color3 {
+  background-color: #ffe0b2; /* Light orange */
+}
+
+/* Hover effects for different colors */
+.experience--color1:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #6ae1f1; /* Change to light cyan */
+}
+
+.experience--color2:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #eba337; /* Change to light orange */
+}
 
 
 
@@ -475,24 +488,39 @@ canvas.particles-js-canvas-el{
 }
 
 .education__data {
-  background-color: #f9f9f9; /* Light background for education cards */
   border-radius: 0.5rem;
   padding: 1.5rem;
   box-shadow: 0 4px 20px rgba(14, 36, 49, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease; /* Transition for hover effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transition for hover effects */
 }
 
-.education__data:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 30px rgba(14, 36, 49, 0.15); /* Increased shadow on hover */
-  background: linear-gradient(45deg, #ff6b6b, #f9ca24, #1dd1a1, #4a69bd); /* Multi-color gradient on hover */
-  color: #fff; /* Change text color to white on hover for better visibility */
+/* Default background colors removed, hover effects only */
+.education--color1:hover {
+  background-color: #ffcc5c; /* Change to this color on hover */
 }
 
+.education--color2:hover {
+  background-color: #1dd1a1; /* Change to this color on hover */
+}
+
+.education--color3:hover {
+  background-color: #ff6b6b; /* Change to this color on hover */
+}
+
+.education--color4:hover {
+  background-color: #4a69bd; /* Change to this color on hover */
+}
+
+/* Optional: add a generic class for all education items to ensure they are visible before hover */
+.education__data {
+  background-color: transparent; /* Set to transparent initially */
+}
+
+/* Titles and text styles */
 .education__title {
   margin: 0; /* Remove default margin */
   font-size: 1.25rem; /* Font size for education titles */
-  color: var(--first-color); /* Use your primary color */
+  color: #fff; /* Default text color for better visibility on colored backgrounds */
 }
 
 .education__year {
@@ -504,6 +532,7 @@ canvas.particles-js-canvas-el{
 .education__cgpa {
   margin: 0.25rem 0; /* Margin for institution and CGPA */
 }
+
 
 /* ===== CONTACT =====*/
 .contact__input{
