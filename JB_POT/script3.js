@@ -8,7 +8,7 @@ const reviews = [
         rating: 5
     },
     {
-        name: "Koshor Vinod",
+        name: "Kishor Vinod",
         username: "@kishor",
         body: "Jom is super knowledgeable and always ready to help. A true team player!",
         img: "/img/kishor_image.png",
