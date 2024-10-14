@@ -1178,7 +1178,6 @@ body {
 
 /* Keep the body without a defined background color */
 body {
-  margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   /* No background color set to allow site background to show */
