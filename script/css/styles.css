@@ -459,12 +459,10 @@ canvas.particles-js-canvas-el{
 
 /* Different background colors for each experience item */
 .experience--color1 {
-  background-color: #f9f9f9; /* Light grey */
+  background-color: #2df500; /* Light grey */
 }
 
-.experience--color3 {
-  background-color: #ffe0b2; /* Light orange */
-}
+
 
 /* Hover effects for different colors */
 .experience--color1:hover {
@@ -474,10 +472,20 @@ canvas.particles-js-canvas-el{
 
 .experience--color2:hover {
   transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #c3e85c; /* Change to light cyan */
+}
+.experience--color3:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
   background-color: #eba337; /* Change to light orange */
 }
-
-
+.experience--color4:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #d63fe4; /* Change to light orange */
+}
+.experience--color5:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #e43f5d; /* Change to light orange */
+}
 
 
 /* ===== EDUCATION ===== */
